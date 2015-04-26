@@ -5,11 +5,9 @@
 @implementation GamePlayScene
 
 - (void)initialize
-{
-    // your code here
+{[self addObstacle];    // your code here
     character = (Character*)[CCBReader load:@"Character"];
     [physicsNode addChild:character];}
-    [self addObstacle];
 
 -(void)update:(CCTime)delta
 {
